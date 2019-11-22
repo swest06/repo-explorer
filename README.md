@@ -1,7 +1,7 @@
 Search engine for code repos.
 
 Technologies:
-  React
+  React,
   ES6
 
 
