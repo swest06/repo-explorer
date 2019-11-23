@@ -46,8 +46,9 @@ img {
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
+  /* Own Additions */
+  padding-top: 5rem;
 }
-
 /* Text Styles*/
 .x-large {
   font-size: 4rem;
@@ -365,6 +366,11 @@ table th {
   width: 100%;
   opacity: 0.9;
   margin-bottom: 1rem;
+  /* Own Additions */
+  position: fixed;
+  -webkit-box-shadow: 7px 12px 24px -14px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 7px 12px 24px -14px rgba(0, 0, 0, 0.44);
+  box-shadow: 7px 12px 24px -14px rgba(0, 0, 0, 0.44);
 }
 
 .navbar ul {
