@@ -1,49 +1,23 @@
-import React, { Component } from "react";
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import "./App.css";
+import Main from "./components/layout/Main";
 import Navbar from "./components/layout/Navbar";
-import Search from "./components/users/Search";
-import Users from "./components/users/Users";
-import axios from "axios";
+import Landing from "./components/layout/Landing";
+import Footer from "./components/layout/Footer";
+const App = () => (
+  <Router>
+    <Fragment>
+      <Navbar />
+      <Route exact path="/" component={Landing} />
 
-class App extends Component {
-  state = {
-    users: [],
-    loading: false
-  };
+      <Switch>
+        <Route exact path="/main" component={Main} />
+      </Switch>
 
-  // async componentDidMount() {
-  //   console.log(process.env.REACT_APP_GITHUB_CLIENT_SECRET);
-  //   this.setState({ loading: true });
-
-  //   const res = await axios.get(
-  //     `https://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
-  //   );
-
-  //   this.setState({ users: res.data, loading: false });
-  // }
-
-  // Search github users
-  searchUsers = async text => {
-    this.setState({ loading: true });
-
-    const res = await axios.get(
-      `https://api.github.com/search/users?q=${text}&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
-    );
-
-    console.log(res.data.items);
-    this.setState({ users: res.data.items, loading: false });
-  };
-  render() {
-    return (
-      <div className="App">
-        <Navbar />
-        <div className="container">
-          <Search searchUsers={this.searchUsers} />
-          <Users loading={this.state.loading} users={this.state.users} />
-        </div>
-      </div>
-    );
-  }
-}
+      {/* <Footer /> */}
+    </Fragment>
+  </Router>
+);
 
 export default App;

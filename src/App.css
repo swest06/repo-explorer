@@ -47,13 +47,14 @@ img {
   overflow: hidden;
   padding: 0 2rem;
   /* Own Additions */
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 /* Text Styles*/
 .x-large {
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+  font-family: "Fugaz One", cursive;
 }
 
 .large {
@@ -63,7 +64,7 @@ img {
 }
 
 .lead {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -361,7 +362,7 @@ table th {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 2rem;
+  padding: 0.3rem 5rem;
   z-index: 1;
   width: 100%;
   opacity: 0.9;
@@ -373,6 +374,10 @@ table th {
   box-shadow: 7px 12px 24px -14px rgba(0, 0, 0, 0.44);
 }
 
+.navbar img {
+  width: 10%;
+}
+
 .navbar ul {
   display: flex;
 }
@@ -380,7 +385,7 @@ table th {
 .navbar a {
   color: #fff;
   padding: 0.45rem;
-  margin: 0 0.25rem;
+  margin: 0 1.25rem;
 }
 
 .navbar a:hover {
@@ -389,6 +394,73 @@ table th {
 
 .navbar .welcome span {
   margin-right: 0.6rem;
+}
+
+/* Landing Page */
+.landing {
+  position: relative;
+  background: url("./img/blue-and-red-galaxy-artwork-1629236.jpg") no-repeat
+    center center/cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.landing-inner {
+  color: #fff;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Overlay */
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+#main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  height: 5rem;
+}
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+#main-footer .footer-content .social .fab {
+  margin-right: 1rem;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem;
+}
+#main-footer .footer-content .social .fab:hover {
+  background: var(--primary-color);
+  color: #eee;
+}
+#main-footer .footer-content a {
+  color: #fff;
+}
+#main-footer .footer-content a:hover {
+  color: var(--primary-color);
 }
 
 /* Mobile Styles */
