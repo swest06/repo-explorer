@@ -60,7 +60,7 @@ class Main extends Component {
   setAlert = (text, colour) => {
     this.setState({ alert: { text: text, colour: colour } });
 
-    setTimeout(() => this.setState({ alert: null }), 5000);
+    setTimeout(() => this.setState({ alert: null, loading: false }), 5000);
   };
   render() {
     return (
