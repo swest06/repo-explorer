@@ -15,6 +15,9 @@ const Navbar = ({ icon, title }) => {
           <Link to="/">Home</Link>
         </li>
         <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
           <Link to="/main">Search</Link>
         </li>
       </ul>
