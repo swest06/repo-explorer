@@ -2,7 +2,7 @@
 
 ## REPO-EXPLORER
 
-An simple to user search engine for code repositories.
+An simple to use search engine for code repositories.
 
 ## Technologies:
   React,
