@@ -11,7 +11,7 @@ An simple to use search engine for code repositories.
 
 ## Technologies:
   React,
-  Context api,
+  Context API,
   ES6,
   HTML,
   SASS
