@@ -14,7 +14,8 @@ An simple to use search engine for code repositories.
   Context API,
   ES6,
   HTML,
-  SASS
+  SASS,
+  NPM
 
 
 *-------------------------------------------------------------------------------------------------*
