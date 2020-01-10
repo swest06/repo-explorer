@@ -6,8 +6,8 @@ An simple to use search engine for code repositories.
 
 ## Features:
   Search for users,
-  View recent repositories,
-  Display profile stats (followers, stars etc..)
+  view recent repositories,
+  display profile stats (followers, stars etc..)
 
 ## Technologies:
   React,
