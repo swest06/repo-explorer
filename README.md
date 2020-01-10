@@ -15,7 +15,8 @@ An simple to use search engine for code repositories.
   ES6,
   HTML,
   SASS,
-  NPM
+  NPM,
+  Axios
 
 
 *-------------------------------------------------------------------------------------------------*
