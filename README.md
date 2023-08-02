@@ -2,14 +2,14 @@
 
 ## REPO-EXPLORER
 
-An simple to use search engine for code repositories.
+A simple to use search engine for code repositories.
 
-## Features:
+# Features:
   Search for users,
-  view recent repositories,
-  display profile stats (followers, following, public repos, public gists etc..)
+  View recent repositories,
+  display profile stats (followers, following, public repos, public gits etc..)
 
-## Technologies:
+# Technologies:
   React,
   Context API,
   ES6,
