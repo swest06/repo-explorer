@@ -4,12 +4,12 @@
 
 A simple to use search engine for code repositories.
 
-# Features:
+### Features:
   Search for users,
   View recent repositories,
   display profile stats (followers, following, public repos, public gits etc..)
 
-# Technologies:
+### Technologies:
   React,
   Context API,
   ES6,
